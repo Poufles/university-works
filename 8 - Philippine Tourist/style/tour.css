@@ -1,0 +1,211 @@
+/* fonts 
+
+font-family: "Ubuntu Condensed", sans-serif;
+
+*/
+
+
+*
+{
+    font-family: "Ubuntu Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: 	#f0dfd0;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+/* Class */
+.nav-container
+{
+    height: 10dvh;
+}
+
+.nav-item
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-tab-item
+{
+    padding: 10px;
+    border-radius: 20px;
+    transition: 1s;
+
+    &:last-child
+    {
+        background-color: #000000db;
+        a 
+        {
+            color: #fef8fc;
+        }
+    }
+}
+
+.nav-tab-item:hover
+{
+    background-color: #000000db;
+    a 
+    {
+        color: #fef8fc;
+    }
+}
+
+.content-card
+{
+    cursor: default;
+    text-align: center;
+    padding: 50px;
+    transition: 1s;
+
+    &:hover 
+    {
+        background-color: #f4e4d6;
+        box-shadow: 0 25px 20px #0000006f;
+        transform: scale(1.1);
+    }
+}
+
+.content-image
+{
+    width: 100px;
+}
+
+.content-desc-box
+{
+    text-align: justify;
+    height: 400px;
+    width: 400px;
+    h3 
+    {
+        padding-top: 30px;
+        text-align: center;
+        font-size: 60px;
+    }
+
+    h4
+    {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    h5 
+    {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    p 
+    {
+        font-size: 25px;
+    }
+}
+
+.link-container
+{
+    margin: 0 0 120px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.link-item
+{
+    a 
+    {
+        padding: 20px;
+        border-radius: 20px;
+        transition: 1s;
+        &:hover
+        {
+            transform: scale(1.1);
+            box-shadow: 0 15px 10px #00000083;
+        }
+
+        &:hover img 
+        {
+            transform: scale(1.1);
+        }
+    }
+
+    img
+    {
+        transition: 1s;
+        width: 40px;
+    }
+}
+
+
+
+
+
+
+
+/* ID */
+#nav-left
+{
+    padding-left: 60px;
+}
+
+#nav-right
+{
+    font-size: 20px;
+    justify-content: right;
+    padding-right: 60px;
+}
+
+#footer-container
+{
+    height: 10vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    footer 
+    {
+        font-family: "Ubuntu Condensed", sans-serif;
+        color: #ffe9f7;
+        font-size: 20px;
+        padding: 30px;
+    }
+}
+
+
+/* Grid */
+.grid-col-2
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+
+
+
+/* Flex */
+.nav-right-tab
+{
+    display: flex;
+    gap: 30px;
+}
+
+.content-box
+{
+    display: flex;
+    gap: 30px;
+    padding: 120px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}

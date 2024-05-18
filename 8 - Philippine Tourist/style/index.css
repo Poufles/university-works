@@ -1,0 +1,627 @@
+/* fonts 
+
+font-family: "Ubuntu Condensed", sans-serif;
+
+*/
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #fef8fc;
+}
+
+a
+{
+    text-decoration: none;
+    color: #fef8fc;
+}
+
+
+
+
+/* Class*/
+.description-item
+{
+    font-size: 30px;
+    cursor: default;
+}
+
+.nav-right-item
+{
+    transition-duration: 0.5s;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.nav-right-item:hover
+{
+    background-color: #000000db;
+}
+
+.nav-right-item a:hover
+{
+    color: 	#ffe9f7;
+}
+
+.link-container
+{
+    border-radius: 25px;
+    padding: 15px;
+    &:hover
+    {
+        background-color: #ffe9f7;
+    }
+}
+
+.card
+{
+    width: 24rem;
+    height: 36rem;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+
+    img
+    {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.9;
+        transition: 1s;
+    }
+
+    h3
+    {
+        font-family: "Ubuntu Condensed", sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        position: absolute;
+        color: #fef8fc;
+        background-color: #000000a2;
+        border-radius: 20px;
+        padding: 10px;
+        inset: auto auto 30px 30px;
+        margin: 0;
+        transition: inset .3s .3s ease-out;
+        text-transform: uppercase;
+    }
+
+    p
+    {
+        font-family: "Ubuntu Condensed", sans-serif;
+        font-size: 23px;
+        color: #fef8fc;
+        background-color: #0000008e;
+        border-radius: 20px;
+        padding: 10px;
+        position: absolute;
+        opacity: 0;
+        max-width: 80%;
+        transition: opacity .3s ease-out;
+        inset: auto auto 20px 30px;
+    }
+
+    &:hover h3 {
+        opacity: 0;
+        transition: .5s ease-out;
+    }
+      
+    &:hover p{
+        opacity: 1;
+        transition: opacity .5s .1s ease-in;
+    }
+      
+    &:hover img {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+.left-content
+{
+    background-image: linear-gradient(120deg, #fff3fb, #fff) !important;
+    text-align: right;
+}
+
+.article-image-item-food
+{
+    width: 300px;
+    height: 262px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 10px 10px #65876f;
+    transition: .5s;
+
+    img
+    {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.9;
+        transition: 1s;
+    }
+
+    div
+    {
+        text-align: center;
+        font-family: "Ubuntu Condensed", sans-serif;
+        font-size: 23px;
+        color: #fef8fc;
+        background-color: #000000d8;
+        border-radius: 20px;
+        padding: 20px;
+        position: absolute;
+        opacity: 0;
+        max-width: 100%;
+        height: 100%;
+        transition: opacity .3s ease-out;
+    }
+      
+    &:hover div{
+        opacity: 1;
+        transition: opacity .5s .1s ease-in;
+    }
+      
+    &:hover img {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    &:hover 
+    {
+        transform: scale(1.03);
+    }
+}
+
+.img-box
+{
+    width: 160px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 50px;
+    background-image: url(../src/festive-gallery-etag.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 7px 7px #65876f;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    transition: .5s;
+    &:nth-child(2)
+    {
+        background-image: url(../src/festive-gallery-adivay.jpg);
+    }
+    &:nth-child(3)
+    {
+        background-image: url(../src/festive-gallery-panagbenga.jpg);
+    }
+
+    h3 
+    {
+        background-color: #000000ca;
+        border-radius: 10px;
+        padding: 10px;
+        color: #fff;
+        position: absolute;
+        opacity: 0;
+        transition: 1s;
+        text-align: center;
+    }
+    &:hover 
+    {
+        width: 300px;
+    }
+    &:hover h3
+    {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+/* ID */
+#nav-item-1
+{
+    background-color: #000000db;
+}
+
+#nav-item-1 a
+{
+    color: #ffe9f7;
+}
+
+#nav-banner-container
+{
+    grid-column: span 12;
+    background-image: url(../src/banner-baguio.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: 	#fef8fc;
+    font-family: "Ubuntu Condensed", sans-serif;
+}
+
+#nav-banner
+{
+    padding: 40px 60px;
+}
+
+#nav-left
+{
+    cursor: default;
+}
+
+#container-banner
+{
+    padding: 60px;
+}
+
+#link-image
+{
+    width: 40px;
+}
+
+#title-box
+{
+    display: flex;
+    justify-self: right;
+    text-align: right;
+    cursor: default;
+    
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+#title h1
+{
+    font-size: 150px;
+}
+
+#title h3
+{
+    font-size: 30px;
+}
+
+#description-box
+{
+    display: flex;
+    align-items: end;
+}
+
+#black-wrapper
+{
+    background-color: #00000043;
+    height: 100vh;
+}
+
+#container-hero
+{
+    height: 90vh;
+}
+
+#hero-box
+{
+    height: 100%;
+}
+
+#hero-header
+{
+    padding: 50px 120px;
+
+    h3
+    {
+        font-size: 100px;
+        font-family: "Ubuntu Condensed", sans-serif;
+    }
+
+    p
+    {
+        font-size: 25px;
+        font-family: "Ubuntu Condensed", sans-serif;
+    }
+}
+
+#container-content
+{
+    background-color: #fff3fb;
+}
+
+#content-box
+{
+    padding: 60px 120px;
+}
+
+#content-textbot
+{
+    padding: 30px;
+    background-image: linear-gradient(120deg, #fff, #fff3fb);
+    border-radius: 20px;
+    h3 
+    {
+        font-family: "Ubuntu Condensed", sans-serif;
+        font-size: 80px;
+    }
+
+    p 
+    {
+        font-family: "Ubuntu Condensed", sans-serif;
+        font-size: 25px;
+    }
+}
+
+#content-embedded-video
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    iframe
+    {
+        border-radius: 20px;
+        width: 600px;
+        height: 337px;
+        box-shadow: 15px 15px #65876f;
+        transition: 1s;
+
+        &:hover
+        {
+            transform: scale(1.1);
+        }
+    }
+}
+
+#content-festival-container
+{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+#footer-container
+{
+    height: 10vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    footer 
+    {
+        font-family: "Ubuntu Condensed", sans-serif;
+        color: #ffe9f7;
+        font-size: 20px;
+        padding: 30px;
+    }
+}
+
+#container-return
+{
+    margin: 0 60px;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+
+    a 
+    {
+        font-size: 25px;
+        color: #000;
+        font-family: "Ubuntu Condensed", sans-serif;
+        border-radius: 20px;
+        transition: .3s;
+
+        &:hover
+        {
+            color: #65876f;
+            transform: scale(1.1);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Flex */
+#nav-flex-col
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    font-size: 25px;
+}
+
+#nav-right
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px
+}
+
+#link-box
+{
+    display: flex;
+    align-items: end;
+    justify-content: right;
+}
+
+#link
+{
+    background-color: #fef8fc;
+    border-radius: 25px;
+    display: flex;
+    gap: 5px;
+}
+
+#destination-cards
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+#festival-image-gallery
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div 
+    {
+        font-family: "Ubuntu Condensed", sans-serif;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Grid */
+#grid-col-12
+{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+#grid-col-12 > div
+{
+    grid-column: span 12;
+}
+
+#banner-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-auto-rows: 1fr;
+    height: 750px;
+}
+
+.content-article
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin: 90px 0;
+}
+
+#article-image-container
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#article-image-wrapper
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Animations */
+@keyframes banner-background 
+{
+    23%{
+        background-image: url(../src/banner-baguio.jpg);
+    }
+
+    25%{
+        background-image: url(../src/banner-ifugao-2.jpg);
+    }
+
+    48%{
+        background-image: url(../src/banner-ifugao-2.jpg);
+    }
+
+    50%{
+        background-image: url(../src/banner-benguet-2.jpg);
+    }
+
+    73%{
+        background-image: url(../src/banner-benguet-2.jpg);
+    }
+
+    75%{
+        background-image: url(../src/banner-sumaguing.jpg);
+    }
+
+    98%{
+        background-image: url(../src/banner-sumaguing.jpg);
+    }
+    
+    100%{
+        background-image: url(../src/banner-baguio.jpg);
+    }
+}
+
+.nav-banner-animation{
+    animation-name: banner-background;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes article-content
+{
+    0%
+    {
+        transform: translateY(-2px);
+    }
+    
+    100%
+    {
+        transform: translateY(2x);
+    }
+}
+
+.article-content-animation{
+    animation-name: article-content;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+

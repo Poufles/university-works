@@ -1,0 +1,473 @@
+/* fonts 
+
+font-family: "Ubuntu Condensed", sans-serif;
+
+*/
+
+*
+{
+    font-family: "Ubuntu Condensed", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #fef8fc;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+h1, h2, h3, p, ol, li
+{
+    cursor: default;
+}
+
+/* Class */
+.nav-banner-container
+{
+    background-image: url(../src/itinerary-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100dvh;
+}
+
+.nav-container
+{
+    height: 10dvh;
+    color: #fff;
+}
+
+.nav-box
+{
+    height: 100%;
+}
+
+.nav-item
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-tab-item
+{
+    padding: 10px;
+    border-radius: 20px;
+    transition: 1s;
+
+    &:nth-child(5)
+    {
+        background-color: #000000db;
+        a 
+        {
+            color: #fef8fc;
+        }
+    }
+}
+
+.nav-tab-item:hover
+{
+    background-color: #000000db;
+    a 
+    {
+        color: #fef8fc;
+    }
+}
+
+.header-container
+{
+    height: 90dvh;
+}
+
+.header-box
+{
+    height: 100%;
+}
+
+.header-title-container
+{
+    grid-column: span 3;
+}
+
+.header-title-box
+{
+    margin: 60px;
+    text-align: center;
+    color: #fef8fc;
+    h1 
+    {
+        font-size: 150px;
+        text-shadow: 0 5px #000;
+    }
+    h2 
+    {
+        font-size: 30px;
+        text-shadow: 0 5px #000;
+    }
+}
+
+.header-desc-container
+{
+    grid-column: 2;
+}
+
+.header-desc-box
+{
+    text-align: center;
+    p 
+    {
+        color: #fef8fc;
+        font-size: 30px;
+        text-shadow: 0 3px #000;
+    }
+}
+
+.header-delicacy-container
+{
+    margin: 60px 30px;
+    font-size: 20px;
+    color: #fef8fc;
+}
+
+.header-delicacy-item
+{
+    margin: 0 10px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+
+    a 
+    {
+        color: #fef8fc;
+        font-size: 20px;
+    }
+
+    &:hover
+    {
+        transform: scale(1.2);
+        background-color: #000;
+    }
+}
+
+.link-box
+{
+    gap: 15px
+}
+
+.link-item
+{
+    border-radius: 15px;
+    background-color: #fef8fc;
+    padding: 10px;
+    transition: 1s;
+
+    &:hover
+    {
+        background-color:#ffe9f7;
+        transform: scale(1.2);
+        box-shadow: 0 5px #000000c4;
+    }
+}
+
+.hero-title-box
+{
+    margin: 60px 120px 0;
+}
+
+.hero-title-text
+{
+    padding-top: 60px;
+    text-align: center;
+    h3 
+    {
+        font-size: 60px;
+    }
+    p 
+    {
+        font-size: 20px;
+    }
+}
+
+.hero-box
+{
+    padding: 90px 60px;
+    gap: 10px;
+}
+
+.hero-1-card
+{
+    border-radius: 10px;
+    background-color:#fff3fb;
+    box-shadow: 0 5px 15px #000000b6;
+    padding: 20px;
+    text-align: justify;
+    width: 300px;
+    height: 40vh;
+    h2 
+    {
+        font-size: 30px;
+    }
+
+    ol 
+    {
+        padding: 5px 20px;
+        li 
+        {
+            margin: 10px 0;
+            font-size: 17px;
+        }
+    }
+}
+
+.hero-1-content-location-container
+{
+    img 
+    {
+        width: 20px;
+    }
+}
+
+.hero-1-card-line
+{
+    border-radius: 10px;
+    height: 100%;
+    border: 3px rgb(255, 209, 209) solid;
+}
+
+.hero-1-card-text
+{
+    padding: 15px;
+}
+
+.border-3d
+{
+    border-radius: 20px;
+    background-color: 	#fcfcfc;
+    margin: 60px;
+    box-shadow: 0 15px 15px #0000009f;
+}
+
+.padding-60-120
+{
+    padding: 60px;
+}
+
+.width-50
+{
+    width: 50%;
+}
+
+.day-title-imagebox
+{
+    border-radius: 20px;
+    width: 600px;
+    box-shadow: 0 10px 15px #000000a5;
+    transition: 1s;
+
+    &:hover 
+    {
+        transform: scale(1.1);
+        box-shadow: 0 15px 25px #0000005a;
+    }
+}
+
+.day-title-textbox
+{
+    text-align: right;
+    h2
+    {
+        font-size: 90px;
+    }
+
+    h4 
+    {
+        font-size: 30px;
+    }
+
+    p
+    {
+        font-size: 25px;
+    }
+
+    #planned-trip 
+    {
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    ol 
+    {
+        text-align: left;
+        margin-left: 20px;
+    }
+    
+    li 
+    {
+        margin: 10px 0;
+        font-size: 20px;
+    }
+}
+
+.day-title-textbox-alt
+{
+    h2
+    {
+        font-size: 90px;
+    }
+
+    h4 
+    {
+        font-size: 30px;
+    }
+
+    p
+    {
+        font-size: 25px;
+    }
+
+    #planned-trip 
+    {
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    ol 
+    {
+        text-align: left;
+        margin-left: 20px;
+    }
+    
+    li 
+    {
+        margin: 10px 0;
+        font-size: 20px;
+    }
+}
+
+.day-image-container
+{
+    display: flex;
+    align-items: start;
+    align-content: start;
+    justify-content: center;
+    margin-top: 120px;
+    gap: 5px;
+}
+
+.day-image-box
+{
+    width: 350px;
+    border-radius: 20px;
+}
+
+.day-image-card
+{
+    width: 25%;
+    padding: 20px 15px;
+    border-radius: 20px;
+}
+
+.day-image-desc-textbox
+{
+    text-align: justify;
+    padding: 20px;
+    h3
+    {
+        font-size: 30px;
+    }
+    p
+    {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+/* ID */
+#nav-left
+{
+    padding-left: 60px;
+}
+
+#nav-right
+{
+    font-size: 20px;
+    justify-content: right;
+    padding-right: 60px;
+}
+
+#footer-container
+{
+    margin-top: 120px;
+    grid-column: span 12;
+    height: 10vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    footer 
+    {
+        font-family: "Ubuntu Condensed", sans-serif;
+        color: #ffe9f7;
+        font-size: 20px;
+        padding: 30px;
+    }
+}
+
+
+
+/* Grid */
+.grid-col-2
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-3
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+/* Flex */
+.nav-right-tab
+{
+    display: flex;
+    gap: 30px;
+}
+
+.flex-center
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-left
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: left;
+}
+
+.flex-right
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: right;
+}

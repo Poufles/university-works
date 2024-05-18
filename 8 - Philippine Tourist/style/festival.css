@@ -1,0 +1,1177 @@
+/* fonts 
+
+font-family: "Ubuntu Condensed", sans-serif;
+
+*/
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #fef8fc;
+}
+
+a
+{
+    text-decoration: none;
+    color: #000;
+}
+
+
+
+/* Class */
+.banner-content
+{
+    border-left: 2px #f4e4d6 solid;
+    border-right: 2px #f4e4d6 solid;
+    background-image: url(../src/festival-banner-etag.jpg);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.9;
+    width: 300px;
+    transition: 1s;
+    &:nth-child(2)
+    {
+        background-image: url(../src/festival-banner-adivay.jpg);
+    }
+    &:nth-child(3)
+    {
+        background-image: url(../src/festival-banner-panagbenga-2.jpg);
+    }
+    &:hover 
+    {
+        width: 500px;
+        opacity: 1;
+        transform: scaleX(1.1);
+    }
+}
+
+.banner-content-banner
+{
+    background-color: #f4e4d6;
+    background-image: none;
+    max-width: auto;
+    padding: 30px 60px;
+
+    h3 
+    {
+        font-size: 35px;
+    }
+}
+
+.nav-box
+{
+    text-align: center;
+}
+
+.banner-container-banner
+{
+    padding: 30px;
+    height: 75vh;
+}
+
+.title-container
+{
+    cursor: default;
+    grid-column: span 2;
+    h1 
+    {
+        font-size: 150px;
+    }
+    h2 
+    {
+        font-size: 30px;
+    }
+}
+
+.link-container
+{
+    display: flex;
+    align-items: end;
+    justify-content: left;
+}
+
+.link-item
+{
+    border-radius: 50%;
+    padding: 15px;
+    &:hover
+    {
+        background-color: #fff;
+    }
+    img 
+    {
+        width: 30px;
+    }
+}
+
+.description-container
+{
+    display: flex;
+    align-items: end;
+    justify-content: right;
+    text-align: right;
+    cursor: default;
+    div 
+    {
+        font-size: 20px;
+    }
+}
+
+.nav-right-item
+{
+    transition-duration: 0.5s;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.nav-right-item:hover
+{
+    background-color: #000000db;
+    a 
+    {
+        color: #fef8fc;
+    }
+}
+
+.container-section-festival
+{
+    background-color:	#e3d0be;
+    font-family: "Ubuntu Condensed", sans-serif;
+    height: 100vh;
+    grid-column: span 12;
+}
+
+.section-festival-left
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 60px 90px;
+}
+
+.section-festival-right
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.festival-h1-box
+{
+    text-align: center;
+}
+
+.festival-h1-box h1
+{
+    font-size: 150px;
+}
+
+.festival-h1-box p
+{
+    font-size: 25px;
+}
+
+.festival-h2-box
+{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;;
+}
+
+
+.festival-image-card
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.image-tower
+{
+    background-color:	#ead8c8;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 20px 25px #453b32;
+    border-radius: 20px;
+         
+}
+
+.image-container
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    cursor: pointer;
+    h3 
+    {
+        position: absolute;
+        padding: 10px;
+        background-color: #000000ad;
+        border-radius: 20px;
+        font-size: 30px;
+        color: #fef8fc;
+        opacity: 0;
+        transition: 1s;
+    }
+    .festival-image
+    {
+        border-radius: 20px;
+        width: 400px;
+        transition-duration: .5s;
+        opacity: .9;
+    }
+    &:hover img
+    {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    &:hover h3
+    {
+        opacity: 1;
+        transform: scale(1.05);
+    }   
+}
+
+.container-content
+{
+    grid-column: span 12;
+    font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.content-title-container
+{
+    height: 100vh;
+}
+
+.title-image-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-image-box
+{
+    img 
+    {
+        border-radius: 20px;
+        width: 600px;
+        transition-duration: 1s;
+        box-shadow: 20px 20px #000000c2;
+        &:hover 
+
+        {
+            transform: scale(1.1);
+            box-shadow: 50px 50px #0000004d;
+        }
+    }
+}
+
+.title-content-container
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.title-content-box
+{
+    padding-right: 100px;
+}
+
+.title-content-title-box
+{
+    h1 
+    {
+        font-size: 120px;
+    }
+    p 
+    {
+        font-size: 25px;
+    }
+}
+
+.title-content-desc-container
+{
+    display: flex;
+    margin-top: 200px;
+    align-items: center;
+    justify-content: right;
+}
+
+.title-content-desc-box
+{
+    cursor: default;
+    a
+    {
+        font: 20px;
+    }
+}
+
+.background-box
+{
+    height: 100%;
+}
+
+.content-background-container
+{
+    height: 100vh;
+}
+
+.background-right
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+.background-image-container
+{
+    position: relative;
+    
+}
+
+.background-left
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+}
+
+.background-desc-box
+{
+    padding: 60px 120px;
+
+    h2 
+    {
+        font-size: 120px;
+    }
+    
+    p 
+    {
+        font-size: 25px;
+    }
+}
+
+.content-culture-container
+{
+    height: 100vh;
+}
+
+.culture-content
+{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.culture-card
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.culture-content-box
+{
+    width: 260px;
+    height: 600px;
+    margin: 10px;
+    border-radius: 50px;
+    background-image: url(../src/culture-image-etag-1.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px #000000a2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 1s;
+    &:nth-child(2)
+    {
+        background-image: url(../src/culture-image-etag-2.jpg);
+    }
+    &:nth-child(3)
+    {
+        background-image: url(../src/culture-image-etag-3.jpg);
+    }
+    &:nth-child(4)
+    {
+        background-image: url(../src/culture-image-etag-4.jpg);
+    }
+    &:nth-child(5)
+    {
+        background-image: url(../src/culture-image-adivay-1.jpg);
+    }
+
+    div
+    {
+        background-color: #000000ca;
+        padding: 10px;
+        color: #fff;
+        position: absolute;
+        opacity: 0;
+        transition: 1s;
+        text-align: center;
+
+        h3 
+        {
+            font-size: 30px;
+        }
+        p 
+        {
+            font-size: 25px;
+        }
+    }
+
+    &:hover 
+    {
+        box-shadow: 15px 15px #0000003e;
+        width: 500px;
+        transform: scale(1.1);
+        margin: 35px;
+    }
+    &:hover div
+    {
+        opacity: 1;
+    }
+}
+
+.culture-content-box-2
+{
+    width: 260px;
+    height: 600px;
+    margin: 10px;
+    border-radius: 50px;
+    background-image: url(../src/culture-image-adivay-1.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px #000000a2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 1s;
+    &:nth-child(2)
+    {
+        background-image: url(../src/culture-image-adivay-2.jpg);
+    }
+    &:nth-child(3)
+    {
+        background-image: url(../src/culture-image-adivay-3.jpg);
+    }
+    &:nth-child(4)
+    {
+        background-image: url(../src/culture-image-adivay-4.jpg);
+    }
+
+    div
+    {
+        background-color: #000000ca;
+        padding: 10px;
+        color: #fff;
+        position: absolute;
+        opacity: 0;
+        transition: 1s;
+        text-align: center;
+
+        h3 
+        {
+            font-size: 30px;
+        }
+        p 
+        {
+            font-size: 25px;
+        }
+    }
+
+    &:hover 
+    {
+        box-shadow: 15px 15px #0000003e;
+        width: 500px;
+        transform: scale(1.1);
+        margin: 35px;
+    }
+    &:hover div
+    {
+        opacity: 1;
+    }
+}
+
+.culture-content-box-3
+{
+    width: 260px;
+    height: 600px;
+    margin: 10px;
+    border-radius: 50px;
+    background-image: url(../src/culture-image-panagbenga-1.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px #000000a2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 1s;
+    &:nth-child(2)
+    {
+        background-image: url(../src/culture-image-panagbenga-2.jpg);
+    }
+    &:nth-child(3)
+    {
+        background-image: url(../src/culture-image-panagbenga-3.jpg);
+    }
+    &:nth-child(4)
+    {
+        background-image: url(../src/culture-image-panagbenga-4.jpg);
+    }
+
+    div
+    {
+        background-color: #000000ca;
+        padding: 10px;
+        color: #fff;
+        position: absolute;
+        opacity: 0;
+        transition: 1s;
+        text-align: center;
+
+        h3 
+        {
+            font-size: 30px;
+        }
+        p 
+        {
+            font-size: 25px;
+        }
+    }
+
+    &:hover 
+    {
+        box-shadow: 15px 15px #0000003e;
+        width: 500px;
+        transform: scale(1.1);
+        margin: 35px;
+    }
+    &:hover div
+    {
+        opacity: 1;
+    }
+}
+
+.culture-title-box
+{
+    text-align: center;
+    h1 
+    {
+        font-size: 120px;
+    }
+    p
+    {
+        font-size: 25px;
+    }
+}
+
+.event-title-box
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.event-title-text
+{
+    padding: 60px 0px 60px 120px;
+    text-align: right;
+
+    h1 
+    {
+        font-size: 120px;
+    }
+    p 
+    {
+        font-size: 25px;
+    }
+}
+
+.event-title-imagebox
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 120px;
+}
+
+.event-title-img
+{
+    iframe 
+    {
+        border-radius: 30px;
+        box-shadow: 15px 15px #000000a1;
+        transition: 1s;
+
+        &:hover 
+        {
+            box-shadow: 25px 25px #0000005f;
+            transform: scale(1.1);
+        }
+    }
+}
+
+.event-content-img
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: right;
+    img 
+    {
+        width: 600px;
+        box-shadow: 15px 15px #00000096;
+        border-radius: 30px;
+        transition: 1s;
+
+        &:hover 
+        {
+            transform: scale(1.05);
+            box-shadow: 25px 25px #0000004d;
+        }
+    }
+}
+
+.event-content-img-alt
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: left;
+    img 
+    {
+        width: 600px;
+        box-shadow: 15px 15px #00000096;
+        border-radius: 30px;
+        transition: 1s;
+
+        &:hover 
+        {
+            transform: scale(1.05);
+            box-shadow: 25px 25px #0000004d;
+        }
+    }
+}
+
+.event-content-box
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.event-content-text
+{
+    padding-right: 120px;
+    p 
+    {
+        font-size: 25px;
+    }
+}
+
+.event-content-text-alt
+{
+    padding-left: 120px;
+    p 
+    {
+        text-align: right;
+        font-size: 25px;
+    }
+}
+
+.event-extra-container
+{
+    padding: 120px;
+}
+
+.event-extra-card
+{
+    h3 
+    {
+        font-size: 60px;
+    }
+
+    p 
+    {
+        font-size: 25px;
+    }
+}
+
+.return-to-top
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 100px;
+    a 
+    {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+/* ID */
+#nav-item-2
+{
+    background-color: #000000db;
+}
+
+#nav-item-2 a
+{
+    color: #fef8fc;
+}
+
+#festival-image-item-3
+{
+    grid-column: span 2;
+}
+
+#festival-item-1
+{
+    cursor: default;
+    color: #453b32;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#content-1
+{
+    background-color:#f4e4d6;
+}
+
+
+#background-image-item-1
+{
+    transform: rotate(-25deg);
+    position: relative;
+    inset: auto 120px auto auto;
+    animation: slideout 1s reverse;
+
+    img
+    {
+        border-radius: 20px;
+        width: 400px;
+    }
+}
+
+#background-image-item-1:hover
+{
+    animation: slidein 1s forwards;
+}
+
+#background-image-item-2
+{
+    position: absolute;
+    bottom: 0;
+    inset: 0px auto auto 150px;
+    transform: rotate(25deg);
+    transition: 1s;
+
+    img
+    {
+        border-radius: 20px;
+        width: 400px;
+    }
+
+    &:hover 
+    {
+        transform: scale(1.2) rotate(0deg);
+    }
+}
+
+#background-image-item-3
+{
+    position: absolute;
+    bottom: 0;
+    inset: auto auto -120px auto;
+    animation: slideout-item-3 1s reverse;
+    img
+    {
+        border-radius: 20px;
+        width: 400px;
+    }
+}
+
+#background-image-item-3:hover
+{
+    animation: slidein-item-3 1s forwards;
+}
+
+#footer-container
+{
+    grid-column: span 12;
+    height: 10vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    footer 
+    {
+        font-family: "Ubuntu Condensed", sans-serif;
+        color: #ffe9f7;
+        font-size: 20px;
+        padding: 30px;
+    }
+}
+
+#content-2
+{
+    background-color:#ead8c8;
+}
+
+#content-3
+{
+    background-color:	#f4e4d6;
+}
+
+
+
+
+
+
+
+/* Flex */
+.container-banner
+{
+    grid-column: span 12;
+    display: flex;
+    height: 100vh;
+    font-family: "Ubuntu Condensed", sans-serif;
+}
+
+.banner-box
+{
+    display: flex;
+}
+
+.nav-right
+{
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+}
+
+.link-box
+{
+    border-radius: 25px;
+    display: flex;
+    gap: 5px;
+}
+
+.culture-flexbox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0 120px;
+}
+
+
+
+
+
+
+
+
+/* Grid */
+#grid-col-12
+{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.banner-grid-col2
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 75vh;
+}
+
+.section-festival-grid
+{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.festival-right-image-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.title-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+.background-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+}
+
+.culture-grid
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+}
+
+.event-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.event-content-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 140px;
+}
+
+.event-extra-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+
+
+
+
+
+
+
+/* Animation */
+@keyframes banner-image-1 {
+    0%
+    {
+        background-image: url(../src/festival-banner-etag.jpg);
+    }
+
+    48%
+    {
+        background-image: url(../src/festival-banner-etag.jpg);
+    }
+
+    50%
+    {
+        background-image: url(../src/festival-banner-etag-2.jpg);
+    }
+
+    98%
+    {
+        background-image: url(../src/festival-banner-etag-2.jpg);
+    }
+
+    100%
+    {
+        background-image: url(../src/festival-banner-etag.jpg);
+    }
+}
+
+.animation-banner-item-1
+{
+    animation-name: banner-image-1;
+    animation-duration: 30s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes banner-image-2 {
+    0%
+    {
+        background-image: url(../src/festival-banner-adivay.jpg);
+    }
+
+    48%
+    {
+        background-image: url(../src/festival-banner-adivay.jpg);
+    }
+
+    50%
+    {
+        background-image: url(../src/festive-gallery-adivay.jpg);
+    }
+
+    98%
+    {
+        background-image: url(../src/festive-gallery-adivay.jpg);
+    }
+
+    100%
+    {
+        background-image: url(../src/festival-banner-adivay.jpg);
+    }
+}
+
+.animation-banner-item-2
+{
+    animation-name: banner-image-2;
+    animation-duration: 30s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes banner-image-3 {
+    0%
+    {
+        background-image: url(../src/festival-banner-panagbenga-2.jpg);
+    }
+
+    48%
+    {
+        background-image: url(../src/festival-banner-panagbenga-2.jpg);
+    }
+
+    50%
+    {
+        background-image: url(../src/festival-banner-panagbenga.jpg);
+    }
+
+    98%
+    {
+        background-image: url(../src/festival-banner-panagbenga.jpg);
+    }
+
+    100%
+    {
+        background-image: url(../src/festival-banner-panagbenga-2.jpg);
+    }
+}
+
+.animation-banner-item-3
+{
+    animation-name: banner-image-3;
+    animation-duration: 30s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein 
+{
+    50%
+    {
+        transform: rotate(0deg) translateX(-220px);
+    }
+    
+    90%
+    {
+        z-index: 1;
+    }
+
+    100%
+    {
+        transform: scale(1.2) translateX(0);
+        z-index: 1;
+    }
+}
+
+@keyframes slideout 
+{
+    50%
+    {
+        transform: rotate(0deg) translateX(-220px);
+    }
+    
+    90%
+    {
+        z-index: 1;
+    }
+
+    100%
+    {
+        transform: scale(1.2) translateX(0);
+        z-index: 1;
+    }
+}
+
+@keyframes slidein-item-3
+{
+    50%
+    {
+        transform: translateY(400px);
+    }
+    
+    90%
+    {
+        z-index: 2;
+    }
+
+    100%
+    {
+        transform: scale(1.2);
+        z-index: 2;
+    }
+}
+
+@keyframes slideout-item-3
+{
+    50%
+    {
+        transform: translateY(400px);
+    }
+    
+    90%
+    {
+        z-index: none;
+    }
+
+    100%
+    {
+        transform: scale(1.2) translateY(0);
+        z-index: 1;
+    }
+}
