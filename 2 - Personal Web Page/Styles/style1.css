@@ -1,0 +1,48 @@
+body
+{
+    background-image: url("C:\\Users\\Evan\\Downloads\\jonghilario.jpg");
+    margin: 50px 300px;
+    max-height: auto;
+    max-width: auto;
+}
+
+table
+{
+    background-color: white;   
+    border-color: black;
+    border-style: solid;
+    height: 100%;
+    width: 100%;
+
+    max-height: auto;
+    max-width: auto;
+}
+
+td
+{
+    text-align: center;
+    vertical-align: top;
+    padding: 20px;
+    height: 100px;
+    width: 100px;
+
+    max-height: auto;
+    max-width: auto;
+}
+
+dt
+{
+    text-align: left;
+}
+
+dd
+{
+    text-align: left;
+}
+
+
+#cell_header
+{
+    height: 200px;
+    width: 200px;
+}
