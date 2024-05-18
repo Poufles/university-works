@@ -1,0 +1,99 @@
+body
+{
+    /*margin: 20%, 75%, 9%*/
+    margin: 50px 500px 17px;
+    max-width: auto; min-width: auto;
+}
+
+#header_header
+{
+    margin: auto auto 30px;
+    font-size: 56px;
+    line-height: 17px;
+    text-align: center;
+
+    max-width: auto; min-width: auto;
+}
+
+#header_sub
+{
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+
+    max-width: auto; min-width: auto;
+}
+
+
+#div_line
+{
+    border-top: 3px solid;
+    margin-top: 10px;
+
+    max-width: auto; min-width: auto;
+}
+
+#content_main
+{
+    border: 6px double;
+    font-size: 21px;
+    padding: 50px;
+
+    max-width: auto; min-width: auto;
+}
+
+#about_me
+{
+    margin: auto;
+    border-top: 3px solid #000; border-bottom: 3px solid #000;
+    font-weight: bold;
+    padding: 7px;
+
+    max-width: auto; min-width: auto;
+}
+
+#about_me_content
+{
+    font-size: 20px;
+    margin-left: 12px;
+
+    max-width: auto; min-width: auto;
+}
+
+#img_myself
+{
+    border-radius: 60%;
+    display: block;
+    margin: auto;
+    width: 15%;
+}
+
+
+
+.header
+{
+    margin: auto;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.content
+{
+    margin: 16px 45px 16px;
+}
+
+.margin_list_desc
+{
+    margin: 10px 89px auto; 
+}
+
+.content_div
+{
+    border-top: 1px solid
+}
+
+
+.tab_space
+{
+    margin-left: 50px;
+}
