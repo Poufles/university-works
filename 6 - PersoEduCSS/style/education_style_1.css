@@ -1,0 +1,182 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+/* HTML Components */
+body
+{
+    background-color: #fdf5f6;
+}
+
+footer
+{
+    background-color: #fffafa;
+    display: flex;
+    height: 40px;
+}
+
+footer div
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: auto 40px;
+    text-align: right;
+    width: 100%;
+}
+
+nav
+{
+    width: 100%;
+}
+
+h1
+{
+    font-size: 50px;
+    text-align: center;
+}
+
+
+/* Classes */
+.article-education
+{
+    background-color: white;
+    box-shadow: 20px 20px #525252;
+    padding: 30px;
+    padding-top: 50px;
+}
+
+.article-education h1
+{
+    font-size: 30px;
+    text-align: left;
+}
+
+.article-education h2
+{
+    font-size: 20px;
+    color: #949494;
+}
+
+.article-education p
+{
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+.breaker
+{
+    margin: 100px;
+}
+
+.div-header-main-image
+{
+    float: left;
+    margin: 0 150px;
+    width: auto;
+}
+
+.div-header-main-image img
+{
+    box-shadow: 50px 50px #525252;
+    width: 500px;
+}
+
+.div-header-main-text
+{
+    padding: 180px 0;
+}
+
+.div-header-main-text h1
+{
+    text-align: left;
+    font-size: 80px;
+}
+
+.div-header-main-text p
+{
+    background-color: rgb(158, 155, 155, 0.8);
+    color: #ffffff;
+    font-size: 30px;
+    margin-left: 300px;
+    margin-right: 100px;
+    padding: 30px 10px;
+}
+
+.div-education
+{
+    margin: 80px 50px;
+}
+
+.header-main
+{
+    padding: 70px 100px;
+}
+
+.img-education-logo
+{
+    clip-path: circle();
+    float: left;
+    margin-right: 30px;
+    shape-outside: circle();
+    width: auto;
+}
+
+.img-education-logo img
+{
+    width: 200px;
+}
+
+
+
+/* ID */
+#name
+{
+    text-align: left;
+}
+
+#tab
+{
+    text-align: right;
+}
+
+#tab a:hover
+{
+    color: #6e4539;
+    font-size: 25px;
+}
+
+
+
+/* Navigation Grid */
+
+.nav-main
+{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.nav-grid
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: auto 0;
+    padding: 20px 60px;
+    text-align: center;
+}
+
+.nav-grid a
+{
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Article Grid */
+.div-education
+{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
