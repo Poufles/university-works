@@ -1,0 +1,59 @@
+body
+{
+    margin: 315px 600px;
+    max-height: auto;
+    max-width: auto;
+}
+
+table
+{
+    margin: auto;
+    height: 315px;
+    max-height: auto;
+    max-width: auto;
+    width: 100%;
+}
+
+
+#cell_welcome_layout
+{
+    height: 60%;
+    width: 85%;
+    vertical-align: middle;
+}
+
+#cell_enter_layout
+{
+    height: 40%;
+    width: 85%;
+    vertical-align: top;
+}
+
+#cell_text_enter_layout
+{
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    word-break: break-word;
+}
+
+#cell_text_welcome_layout
+{
+    color: #f5f36c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin: 30px;
+    text-align: center;
+    -webkit-text-stroke: 0.5px black;
+}
+
+#div_enter_layout
+{
+    text-align: center;
+}
+
+
+
+

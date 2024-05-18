@@ -1,0 +1,229 @@
+/*
+    Color Scheme:
+    white
+    #f2fbff
+    #9cdbff
+*/
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.about_image_left
+{
+    border: 3px solid ;
+    float: left;
+    margin-right: 15px;
+}
+
+.about_image_right
+{
+    border: 3px solid ;
+    float: right;
+    margin-left: 15px;
+    vertical-align: right;
+}
+
+.about_desc_layout
+{
+    text-align: justify;
+}
+
+.about_title_layout
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.afterword_text_container
+{
+    background-color: rgb(156, 219, 255, 0.7);
+    border: 3px solid white;
+    margin: 165px 400px;
+    font-size: 25px;
+    padding: 70px 50px;
+    text-align: center;
+}
+
+.afterword_text_header_style
+{
+    font-size: 80px;
+}
+
+.content_divider
+{
+    padding: 20px 40px;
+}
+
+.header
+{
+    background-color: #f2fbff;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+.header_content
+{
+    height: 120px;
+    padding: 20px;
+    width: 100%;
+}
+
+.header_link
+{
+    color: black;
+    text-decoration: none;
+}
+
+.header_section
+{
+    width: 100%;
+}
+
+.hero
+{
+    background-attachment: fixed;
+    background-image: url("../src/hero_background_dasangrypanda.png");
+    background-repeat: no-repeat;
+    background-position: center 30px;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}
+
+.hero_text_layout
+{   
+    font-size: 30px;
+    margin: 0px;
+    padding: 150px 100px;
+    text-align: right;
+}
+
+.table_about
+{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+.td_about_cell_style
+{
+    padding: 30px 0px;
+    text-align: justify;
+}
+
+.td_about_cell_text_style
+{
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.td_header_style
+{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    text-align: center;
+}
+
+.td_header_layout
+{
+    text-align: center;
+    vertical-align: top;
+}
+
+.td_summary_desc_layout
+{
+    padding-bottom: 23px;
+    padding-left: 23px;
+    padding-top: 0px;
+    padding-right: 23px;
+    text-align: justify;
+    width: 20%;
+    vertical-align: top;
+}
+
+.td_summary_image_layout
+{
+    padding: 23px;
+    text-align: center;
+    width: 20%;
+}
+
+.td_summary_image_border
+{
+    border: 3px solid #9cdbff;
+    border-radius: 50%;
+}
+
+
+#about_title_right_layout
+{
+    display: block;
+    text-align: right;
+}
+
+#afterword_bg
+{
+    background-attachment: fixed;
+    background-image: url(../src/foreword-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+
+#about_bg
+{
+    background-image: linear-gradient(#9cdbff, white);
+}
+
+#footer
+{
+    text-align: right;
+}
+
+#td_about_header_border
+{
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+#td_header_left_style
+{
+    font-size: 20px;
+    width: 30%;
+    vertical-align: middle;
+}
+
+#td_header_left_content
+{
+    width: 33%;
+}
+
+#td_header_right_style
+{
+    font-size: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: right;
+    width: 70%;
+    vertical-align: middle;
+}
+
+#td_summary_cell_header
+{
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
