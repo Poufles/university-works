@@ -1,0 +1,163 @@
+*
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+body
+{
+    background-color: #fffafa;
+}
+
+footer
+{
+    background-color: #000;
+    color: #fffafa;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 30px;
+}
+
+
+
+
+/* Class */
+.nav-right-items
+{
+    font-size: 20px;
+    margin: 0 30px;
+}
+
+.problem-items
+{
+    align-items: center;
+    background-color: #576159;
+    border-radius: 5px;
+    box-shadow: 10px 5px #fffae3, 0 10px #576159, 20px 10px #576159;
+    color: #fff;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    height: 190px;
+    padding: 10px 30px;
+    text-align: center;
+    transition: 550ms;
+}
+
+.problem-items:hover
+{
+    transform: scale(1.1);
+}
+
+
+
+/* ID */
+
+
+#contact-splash
+{
+    width: 100%;
+}
+
+#contact-splash-image
+{
+    -webkit-mask-image: linear-gradient(-90deg, 
+    rgb(0 0 0 / 1) 50%,
+    rgb(0 0 0 / 0.5),
+    rgb(0 0 0 / 0)
+    );
+    mask-image: linear-gradient(-90deg, 
+    rgb(0 0 0 / 1) 50%,
+    rgb(0 0 0 / 0.5),
+    rgb(0 0 0 / 0),
+    );
+
+    width: 550px;
+}
+
+#contact-textbox
+{
+    background-image: linear-gradient(-90deg, #fff2e6, #f0d5c5);
+    padding: 50px 70px;
+    text-align: center;
+}
+
+#contact-textbox h1
+{
+    font-size: 70px;
+}
+
+#contact-textbox h2
+{
+    font-size: 30px;
+}
+
+#social-logo
+{
+    margin: 30px 0;
+    transition: 550ms;
+    width: 70px;
+}
+
+#social-logo:hover
+{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/* Flexbox */
+#contact-container
+{
+    background-color: #fff2e6;
+    display: flex;
+    gap: 10px;
+}
+
+#contact-text-container
+{
+    flex-grow: 1;
+}
+
+#container-logo
+{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+#nav-tools
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px;
+}
+
+#nav-right
+{
+    display: flex;
+}
+
+#problem-container
+{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+
+
+
+/* Grid */

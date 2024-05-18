@@ -1,0 +1,255 @@
+*
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+body
+{
+    background-color: #fffafa;
+}
+
+footer
+{
+    background-color: #000;
+    color: #fffafa;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 30px;
+}
+
+
+/* Class */
+.div-nav-tabs div
+{
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    justify-items: center;
+}
+
+.div-header-container
+{
+    background-image: url("../src/woman-on-stairs.jpeg");
+    background-size: 1900px;
+    background-position: 0px -600px;
+    background-repeat: no-repeat;
+    height: 70vh;
+    padding: 30px 150px;
+}
+
+.div-header-container header
+{
+    background-color: #f7e9d7;
+    box-shadow: 10px 10px #a38c6a;
+    margin: 150px 900px 150px 0;
+    padding: 50px;
+}
+
+.div-header-container h1
+{
+    font-size: 115px;
+}
+
+.div-content-container
+{
+    padding-top: 80px;
+}
+
+.div-content-image
+{
+    display: flex;
+    justify-content: right;
+}
+
+.div-content-image img
+{
+    box-shadow: 10px 0 #edddce, 20px 0 #333832;
+    width: 500px;
+}
+
+.catalog-container
+{
+    grid-column: span 3;
+    padding: 10px 0;
+}
+
+.catalog-container h1
+{
+    font-size: 90px;
+
+}
+
+.catalog-container p
+{
+    font-size: 20px;
+
+}
+
+.catalog-content
+{
+    height: 400px;
+    transition: 550ms;
+}
+
+.catalog-content:hover
+{
+    transform: scale(1.05);
+}
+
+.catalog-philosophy
+{
+    background-image: url('../src/the-art-of-rhetoric-collins-classics.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 10px #000);
+}
+
+.catalog-novel
+{
+    background-image: url('../src/eleanor-park.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 10px #000);
+}
+
+.catalog-fiction
+{
+    background-image: url('../src/the-end-of-the-world-running-club.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0 0 10px #000);
+}
+
+.catalog-content div
+{
+    padding: 30px 10px;
+    text-align: center;
+}
+
+.catalog-img
+{
+    width: 250px;
+}
+
+.catalog-desc
+{
+    text-align: center;
+}
+
+.nav-right-items
+{
+    font-size: 20px;
+    margin: 0 30px;
+}
+
+.about-container
+{
+    background-image: linear-gradient(90deg, #ffe2cf, #fff);
+    border-top: 3px solid #000;
+    box-shadow: 0 5px #000 inset, 0 -5px #000;
+    padding: 100px
+}
+
+.about-wrap
+{
+    padding: 30px 100px;
+}
+
+.about-title
+{
+    background-color: #677569;
+    box-shadow: 15px 15px 10px #000;
+    color: #fff;
+    font-size: 60px;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-image-container img
+{
+    box-shadow: 15px 15px 10px #333832;
+    width: 600px;
+}
+
+.about-description
+{
+    text-align: right;
+}
+
+
+
+/* ID */
+#center-right
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Grids */
+.div-nav-container
+{
+    display: grid;
+    grid: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 70px;
+}
+
+.div-nav-tabs
+{
+    display: grid;
+    grid: 10px;
+    grid-template-columns: 64% 18% 18%;
+}
+
+.div-content-grid
+{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 35% 0.9fr;
+}
+
+.catalog-grid
+{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.about-grid
+{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+
+    font-size: 27px;
+}
+
+
+
+/* Flex */
+#nav-tools
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px;
+}
+
+#nav-right
+{
+    display: flex;
+}
