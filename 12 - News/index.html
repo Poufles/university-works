@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/navfooter.css">
+    <link rel="stylesheet" href="style/category.css">
+    <link rel="stylesheet" href="style/modal.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <title>MissedKomms®</title>
+</head>
+
+<body>
+    <div class="wrapper p-4 cust-bg-color-light-gray" id="cookie-container">
+        <div class="modal-title-container d-flex justify-content-center align-items-center">
+            <img src="src/missedkomms-logo.jpg" alt="" width="60px">
+            <div class="modal-title-text ms-2">
+                <h5>Cookie Use<br>Tracking the Komms</h5>
+            </div>
+        </div>
+        <div class="my-4 div-border-segment-black"></div>
+        <div class="modal-content-container">
+            <p class="text-justify">
+                We use cookies to enhance your browsing experience, analyze site traffic, and personalize content and
+                advertisements. Cookies help us understand how you interact with our site, allowing us to improve your
+                user experience. By continuing to browse or clicking "Accept," you agree to the storing of cookies on
+                your device. For more information on how we use cookies and how you can manage them, please review our
+                comprehensive Cookie Policy.
+            </p>
+        </div>
+        <div class="modal-button-container d-flex justify-content-center gap-2">
+            <button class="btn btn-primary fw-bold" id="cookie-btn-accept">Accept Cookies</button>
+            <button class="btn btn-danger fw-bold" id="cookie-btn-decline">Decline Cookies</button>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="sticky-top">
+            <div class="row py-3 cust-bg-color-light-gray">
+                <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-2"></div>
+                <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 ">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid d-flex justify-content-between align-items-center">
+                            <div class="navbar-brand left-container">
+                                <div class="nav-icon-container d-flex align-items-center">
+                                    <img src="src/missedkomms-logo.jpg" alt="" width="60px">
+                                    <div class="ms-2 fs-5 fw-bold" style="cursor: default;">Missed<br>Komms ® </div>
+                                </div>
+                                <div class="nav-motto-container fw-bold mt-1 cust-fs-10" style="cursor: default;">
+                                    Where Missed Connections Matter
+                                </div>
+                            </div>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse mx-2" id="navbarSupportedContent">
+                                <ul
+                                    class="navbar-nav me-auto mb-2 pt-3 pt-sm-4 pt-lg-0 gap-3 justify-content-center justify-content-lg-end w-100 d-sm-flex flex-row flex-wrap">
+                                    <li class="nav-item nav-tab-style nav-tab-selected">
+                                        <a class="nav-link active d-flex flex-column align-items-center" href="#">
+                                            <img src="src/index-vector.svg" alt="" class="cust-w-30px">
+                                            <div>
+                                                MK News
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-tab-style">
+                                        <a class="nav-link active d-flex flex-column align-items-center"
+                                            href="local_news.html">
+                                            <img src="src/local-vector.svg" alt="" class="cust-w-30px">
+                                            <div>
+                                                Philippines
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-tab-style">
+                                        <a class="nav-link active d-flex flex-column align-items-center"
+                                            aria-current="page" href="weather_news.html">
+                                            <img src="src/weather-vector.svg" alt="" class="cust-w-30px">
+                                            <div>
+                                                Weather
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-tab-style">
+                                        <a class="nav-link active d-flex flex-column align-items-center"
+                                            aria-current="page" href="showbiz_news.html">
+                                            <img src="src/showbiz-vector.svg" alt="" class="cust-w-30px">
+                                            <div>
+                                                Showbiz
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-tab-style">
+                                        <a class="nav-link active d-flex flex-column align-items-center"
+                                            aria-current="page" href="sportfits_news.html">
+                                            <img src="src/sport-vector.svg" alt="" class="cust-w-30px">
+                                            <div>
+                                                SportFits
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-2"></div>
+            </div>
+            <div class="row cust-bg-color-light-mud-green">
+                <div class="col-12 py-2 cust-color-light-mud-green">Don't Remove This</div>
+            </div>
+        </div>
+
+        <div class="row my-5">
+            <div class="col-1 col-xl-2"></div>
+            <div class="col-10 col-xl-8">
+                <div class="row">
+                    <div class="col-12 col-md-9">
+                        <a href="article/Weather-CurrentIssue.html" class="card-link a-decor-off img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/4-3-ar-weather_current.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h3 class="fw-bold fs-md-5 d-none d-md-block">
+                                    Transition to Rainy season is delayed by La Nina -PAGASA
+                                </h3>
+                                <p class="fw-bold fs-md-5 d-block d-md-none">
+                                    Rainy season is delayed by La Nina
+                                </p>
+                                <p class="cust-color-clay">May 15, 2024</p>
+                            </div>
+                        </a>
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <a href="article/Weather-Pagasa.html" class="card-link a-decor-off img-link">
+                                    <div class="d-flex flex-column card-layout-simple of-hide">
+                                        <img src="src/4-3-ar-weather_PagAsa1.jpg" alt="">
+                                    </div>
+                                    <div class="py-2 mb-3">
+                                        <h3 class="fw-bold fs-md-5 d-none d-md-block">
+                                            PH to have fair and humid weather on Thursday — Pagasa
+                                        </h3>
+                                        <p class="fw-bold fs-md-5 d-block d-md-none">
+                                            Fair and humid weather on Thursday
+                                        </p>
+                                        <p class="cust-color-clay">May 16, 2024</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <a href="article/Weather-Pagasa2.html" class="card-link a-decor-off img-link">
+                                    <div class="d-flex flex-column card-layout-simple of-hide">
+                                        <img src="src/4-3-ar-weather_pagssa2.jpg" alt="">
+                                    </div>
+                                    <div class="py-2 mb-3">
+                                        <h3 class="fw-bold fs-md-5 d-none d-md-block">
+
+                                            "Weekend's Forecast: Good Weather; Storm Brewing Next Week: PAGASA"
+                                            asa
+
+                                        </h3>
+                                        <p class="fw-bold fs-md-5 d-block d-md-none">
+                                            Weekend's Forecast: Good Weather
+                                        </p>
+                                        <p class="cust-color-clay"> November 10, 2024</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <a href="article/Sport-olympics.html" class="card-link a-decor-off img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/4-3-ar-sports-olympics.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <p class="fw-bold fs-md-5">
+                                    Possible 25-strong PH Paris Olympics team
+                                </p>
+                                <p class="cust-color-clay">May 15, 2024</p>
+                            </div>
+                        </a>
+                        <a href="article/Local_News-FlashReport.html" class="card-link a-decor-off d-none  d-md-block img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/4-3-ar-local_alice.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <p class="fw-bold fs-md-5">
+                                    House Initiates Inquiry into Bamban Mayor: Transparency
+                                </p>
+                                <p class="cust-color-clay">May 16, 2024</p>
+                            </div>
+                        </a>
+                        <a href="article/Showbiz-current-2.html" class="card-link a-decor-off d-none  d-md-block img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/4-3-ar-showbiz_current_bea-cristy.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <p class="fw-bold fs-md-5">
+                                    Ogie Diaz on Bea Alonzo’s cyberlibel cases: ‘Ayoko nang magpakaplastik’
+                                </p>
+                                <p class="cust-color-clay">May 2, 2024</p>
+                            </div>
+                        </a>
+                        <a href="article/Local_News-NewsLocal.html" class="card-link a-decor-off d-none d-md-block img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/4-3-ar-local_divorce.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <p class="fw-bold fs-md-5">
+                                    House OKs Divorce Bill on second reading, moving it forward
+                                </p>
+                                <p class="cust-color-clay">May 15, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 col-xl-2"></div>
+        </div>
+
+        <div class="row py-5 mb-5 cust-bg-color-light-gray">
+            <div class="col-1 col-xl-2"></div>
+            <div class="col-10 col-xl-8">
+                <div class="row">
+                    <div class="col-12 col-xl-3 mb-4 mb-xl-0 pb-3 pb-xl-0 div-divider-black-r-b">
+                        <h5 class="fw-bold cust-bg-color-deep-sea p-2 rounded-2 cust-color-white w-fit-content">
+                            Philippines
+                        </h5>
+                        <h3 class="mt-3">House OKs Divorce Bill on second reading</h3>
+                        <p class="mb-3 text-justify">
+                            House lawmakers are considering a parallel investigation into Bamban, Tarlac Mayor Alice Guo, who is under Senate scrutiny for allegedly being a Chinese asset, raising concerns about her nationality and broader Chinese influence in the Philippines.
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <a href="article/Local_News-NewsLocal.html">> Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 mb-4 mb-xl-0 pb-3 pb-xl-0 div-divider-black-r-b">
+                        <h5 class="fw-bold cust-bg-color-sunshine p-2 rounded-2 cust-color-white w-fit-content">
+                            Weather
+                        </h5>
+                        <h3 class="mt-3">DA: AgriculturePM damage due to El Niño hits P6.3 billion</h3>
+                        <p class="mb-3 text-justify">
+                            The El Niño phenomenon has caused P6.3 billion in agricultural damage, primarily affecting rice, corn, and high-value crops, with the highest damage in Mimaropa, and interventions have helped mitigate the impact, according to the Department of Agriculture spokesperson Arnel De Mesa.
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <a href="article/Weather-El-Nino-Effect.html">> Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3 mb-4 mb-xl-0 pb-3 pb-xl-0 div-divider-black-r-b">
+                        <h5 class="fw-bold cust-bg-color-pink p-2 rounded-2 cust-color-white w-fit-content">
+                            Showbiz
+                        </h5>
+                        <h3 class="mt-3">Darren Espanto celebrates 10 years in showbiz with D10 Anniversary concert</h3>
+                        <p class="mb-3 text-justify">
+                            Darren Espanto held a media conference for his upcoming 10th anniversary concert, D10, on June 1, 2024, where he performed his latest single, reflected on his career, expressed gratitude for his achievements and projects, and shared his growth and maturity, with tickets still available online through Ticketnet.
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <a href="article/Showbiz-goodvibes1.html">> Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-3">
+                        <h5 class="fw-bold cust-bg-color-dark-blood p-2 rounded-2 cust-color-white w-fit-content">
+                            SportFits
+                        </h5>
+                        <h3 class="mt-3">National University emphatically reclaims UAAP women's volleyball title</h3>
+                        <p class="mb-3 text-justify">
+                            The National University Lady Bulldogs reclaimed the UAAP volleyball crown by defeating the University of Santo Tomas in the Season 86 women's volleyball finals, led by Finals MVP Alyssa Solomon and Season MVP Bella Belen, with NU's men's team also winning their title and completing a four-peat.
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <a href="article/Sport-Volleyball.html">> Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 col-xl-2"></div>
+        </div>
+
+        <div class="row py-5 mb-5">
+            <div class="col-1 col-xl-2"></div>
+            <div class="col-10 col-xl-8">
+                <div class="carousel-title text-center fw-bold pt-5">
+                    <h1>HOT KOMMS TO NOT MISS</h1>
+                </div>
+                <div class="d-flex flex-wrap justify-content-center align-items-center gap-1 gap-md-5 pb-3 pt-4">
+                    <div type="button" data-bs-target="#hotnews" data-bs-slide-to="0"
+                        class="active clicked fs-xl-4 p-2 rounded" id="carousel-item-1" onclick="choose(this)"
+                        aria-current="true" aria-label="Slide 1">
+                        PHILIPPINES
+                    </div>
+                    <div type="button" data-bs-target="#hotnews" data-bs-slide-to="1" class="active fs-xl-4 p-2 rounded"
+                        id="carousel-item-2" onclick="choose(this)" aria-current="true" aria-label="Slide 1">
+                        WEATHER
+                    </div>
+                    <div type="button" data-bs-target="#hotnews" data-bs-slide-to="2" class="active fs-xl-4 p-2 rounded"
+                        id="carousel-item-3" onclick="choose(this)" aria-current="true" aria-label="Slide 1">
+                        SHOWBIZ
+                    </div>
+                    <div type="button" data-bs-target="#hotnews" data-bs-slide-to="3" class="active fs-xl-4 p-2 rounded"
+                        id="carousel-item-4" onclick="choose(this)" aria-current="true" aria-label="Slide 1">
+                        SPORTFITS
+                    </div>
+                </div>
+                <div id="hotnews" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active featured-item-container box-shadow-lack">
+                            <div class="of-hide">
+                                <a href="article/Local_News-FlashReport.html" class="img-link">
+                                    <div class="display-inline-block position-relative card-layout-1">
+                                        <img src="src/16-9-ar-local_alice2.jpg" alt="" class="w-100">
+                                        <div class="card-layout-1-text">
+                                            <h1 class="cust-color-white d-none d-md-block">
+                                                House Initiates Inquiry into Bamban Mayor: Transparency
+                                            </h1>
+                                            <p class="cust-color-white d-block d-md-none fs-sm-3 fw-bold">
+                                                House to question Bamban Mayor
+                                            </p>
+                                            <p class="cust-color-white d-none d-md-block">
+                                                House lawmakers are considering a parallel probe into Bamban, Tarlac Mayor Alice Guo, already under Senate investigation for allegedly being a Chinese asset, due to national security concerns linked to her questionable nationality, and broader issues of Chinese influence and the need for stringent screening of Chinese students entering the Philippines.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item featured-item-container box-shadow-lack">
+                            <div class="of-hide">
+                                <a href="article/Weather-CurrentIssue.html" class="img-link">
+                                    <div class="display-inline-block position-relative card-layout-1">
+                                        <img src="src/16-9-ar-weather_current.jpg" alt="" class="w-100">
+                                        <div class="card-layout-1-text">
+                                            <h1 class="cust-color-white d-none d-md-block">
+                                                PH to have fair and humid weather on Thursday — Pagasa
+                                            </h1>
+                                            <p class="cust-color-white d-block d-md-none fs-sm-3 fw-bold">
+                                                Fair and humid weather on Thursday
+                                            </p>
+                                            <p class="cust-color-white d-none d-md-block">
+                                                The Philippines is expected to have fair and humid weather on Thursday, with rains in parts of Northern Luzon due to a shear line, and while no weather disturbances are currently affecting the country, the onset of the rainy season may be delayed to June or later due to the transitioning from El Niño to La Niña, which could bring above-normal rainfall from late 2024 to early 2025.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item featured-item-container box-shadow-lack">
+                            <div class="of-hide">
+                                <a href="article/Showbiz-current.html" class="img-link">
+                                    <div class="display-inline-block position-relative card-layout-1">
+                                        <img src="src/16-9-ar-Showbiz_current-kimchiu.jpg" alt="" class="w-100">
+                                        <div class="card-layout-1-text">
+                                            <h1 class="cust-color-white d-none d-md-block">
+                                                Paulo Avelino: 'Kung magiging tayo, ano ang gusto mong tawagan natin?'
+                                            </h1>
+                                            <p class="cust-color-white d-block d-md-none fs-sm-3 fw-bold">
+                                                "ano ang gusto mong tawagan natin?" 
+                                            </p>
+                                            <p class="cust-color-white d-none d-md-block">
+                                                Kim Chiu and Paulo Avelino engaged in a playful question-and-answer game during an interview with ABS-CBN News about their latest project, the Philippine adaptation of "What’s Wrong with Secretary Kim?" where they candidly answered personal questions, showcasing their chemistry and humor.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="carousel-item featured-item-container box-shadow-lack">
+                            <div class="of-hide">
+                                <a href="article/Sport-Volleyball.html" class="img-link">
+                                    <div class="display-inline-block position-relative card-layout-1">
+                                        <img src="src/16-9-ar-sport-volleyball.jpg" alt="" class="w-100">
+                                        <div class="card-layout-1-text">
+                                            <h1 class="cust-color-white d-none d-md-block">
+                                                National University emphatically reclaims UAAP women's volleyball title
+                                            </h1>
+                                            <p class="cust-color-white d-block d-md-none fs-sm-3 fw-bold">
+                                                Bulldogs reclaims UAAP women's volleyball
+                                            </p>
+                                            <p class="cust-color-white d-none d-md-block">
+                                                The National University Lady Bulldogs clinched the UAAP volleyball crown by defeating University of Santo Tomas in Game 2 of the Season 86 women’s volleyball finals, with Alyssa Solomon named Finals MVP, while their men’s team also secured the title, completing a four-peat.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 col-xl-2"></div>
+        </div>
+
+        <div class="row my-5 py-5 cust-bg-color-deep-sea">
+            <div class="col-1 col-xl-3"></div>
+            <div class="col-10 col-xl-6">
+                <div class="row">
+                    <div class="text-center py-5 cust-color-white">
+                        <h1 class="fw-bold fs-1">PHILIPPINES</h1>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <a href="article/Local_News-FlashReport.html" class="card-link a-decor-off img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar-local_alice.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h3 class="fw-bold fs-md-5 d-none d-md-block cust-color-white">
+                                    House Initiates Inquiry into Bamban Mayor: Transparency
+                                </h3>
+                                <p class="fw-bold fs-md-5 d-block d-md-none cust-color-white">
+                                    House to question Bamban Mayor
+                                </p>
+                                <p class="cust-color-clay">May 16, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <a href="article/Local_News-FlashReport.html" class="card-link a-decor-off img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar-local_alice2.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <p class="fw-bold fs-md-5 cust-color-white">
+                                    House to question Bamban Mayor
+                                </p>
+                                <p class="cust-color-clay">May 16, 2024</p>
+                            </div>
+                        </a>
+                        <a href="article/Local_News-NewsLocal.html" class="card-link a-decor-off d-none  d-md-block img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar-local_divorce.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <p class="fw-bold fs-md-5 cust-color-white">
+                                    House OKs Divorce Bill on second reading, moving it forward.
+                                </p>
+                                <p class="cust-color-clay">May 15, 2024</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row d-none d-md-block">
+                    <div class="col-12 d-flex gap-3 flex-wrap flex-lg-nowrap">
+                        <a href="article/Local_News-Current.html" class="card-link a-decor-off img-link section-gallery">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar-Local_kuryente.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h5 class="fw-bold fs-md-5 d-none d-md-block cust-color-white">
+                                    Visayas grid was placed on yellow alert on May 15, 2024
+                                </h5>
+                                <p class="fw-bold fs-md-5 d-block d-md-none cust-color-white">
+                                   Visayas on Yellow Alert
+                                </p>
+                                <p class="cust-color-clay">May 15, 2024</p>
+                            </div>
+                        </a>
+                        <a href="article/Local_News-Incident.html" class="card-link a-decor-off img-link section-gallery">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar-local_busCrash.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h5 class="fw-bold fs-md-5 d-none d-md-block cust-color-white">
+                                    6 dead after speeding truck hits tricycle, bus in Quezon
+                                </h5>
+                                <p class="fw-bold fs-md-5 d-block d-md-none cust-color-white">
+                                    Truck hits trycycle in Quezon
+                                </p>
+                                <p class="cust-color-clay">May 15, 2024</p>
+                            </div>
+                        </a>
+                        <a href="article/Local_News-Incident.html" class="card-link a-decor-off img-link section-gallery">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar-local_incident.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h5 class="fw-bold fs-md-5 d-none d-md-block cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </h5>
+                                <p class="fw-bold fs-md-5 d-block d-md-none cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-clay">dd/mm/yy</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-12 text-center">
+                        <a href="local_news.html" type="button" class="btn cust-btn-2 fw-bold">Go to Philippines Komms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 col-xl-3"></div>
+        </div>
+
+        <div class="my-5 py-5"></div>
+        <div class="row my-5 py-5 cust-bg-color-sunshine">
+            <div class="col-1 col-xl-3"></div>
+            <div class="col-10 col-xl-6">
+                <div class="row">
+                    <div class="text-center py-5">
+                        <h1 class="fw-bold fs-1 cust-color-black">WEATHER</h1>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <a href="article/Weather-CurrentIssue.html" class="card-link a-decor-off img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar-weather_current.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h3 class="fw-bold fs-md-5 d-none d-md-block cust-color-black">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsu.
+                                </h3>
+                                <p class="fw-bold fs-md-5 d-block d-md-none cust-color-black">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-clay">dd/mm/yy</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <a href="article/Weather-Pagasa.html" class="card-link a-decor-off img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar-weather_PagAsa1.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <p class="fw-bold fs-md-5 cust-color-black">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-clay">dd/mm/yy</p>
+                            </div>
+                        </a>
+                        <a href="" class="card-link a-decor-off d-none  d-md-block img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar-weather_pagssa2.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <p class="fw-bold fs-md-5 cust-color-black">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-clay">dd/mm/yy</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row d-none d-md-block">
+                    <div class="col-12 d-flex gap-3 flex-wrap flex-lg-nowrap">
+                        <a href="article/Weather-Pagasa2.html" class="card-link a-decor-off img-link section-gallery">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h5 class="fw-bold fs-md-5 d-none d-md-block cust-color-black">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </h5>
+                                <p class="fw-bold fs-md-5 d-block d-md-none cust-color-black">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-clay">dd/mm/yy</p>
+                            </div>
+                        </a>
+                        <a href="" class="card-link a-decor-off img-link section-gallery">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h5 class="fw-bold fs-md-5 d-none d-md-block cust-color-black">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </h5>
+                                <p class="fw-bold fs-md-5 d-block d-md-none cust-color-black">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-clay">dd/mm/yy</p>
+                            </div>
+                        </a>
+                        <a href="" class="card-link a-decor-off img-link section-gallery">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h5 class="fw-bold fs-md-5 d-none d-md-block cust-color-black">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </h5>
+                                <p class="fw-bold fs-md-5 d-block d-md-none cust-color-black">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-clay">dd/mm/yy</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-12 text-center">
+                        <a href="weather_news.html" type="button" class="btn cust-btn-3 fw-bold">Go to Weather Komms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 col-xl-3"></div>
+        </div>
+
+        <div class="my-5 py-5"></div>
+        <div class="row my-5 py-5 cust-bg-color-pink">
+            <div class="col-1 col-xl-3"></div>
+            <div class="col-10 col-xl-6">
+                <div class="row">
+                    <div class="text-center py-5 cust-color-white">
+                        <h1 class="fw-bold fs-1">SHOWBIZ</h1>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <a href="article/Showbiz-current.html" class="card-link a-decor-off img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar-Showbiz_current-kimchiu.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h3 class="fw-bold fs-md-5 d-none d-md-block cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </h3>
+                                <p class="fw-bold fs-md-5 d-block d-md-none cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-black">dd/mm/yy</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <a href="article/Showbiz-goodvibes2.html" class="card-link a-decor-off img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar-showbiz_goodvibes-BarbieFortez.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <p class="fw-bold fs-md-5 cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, animi.
+                                </p>
+                                <p class="cust-color-black">dd/mm/yy</p>
+                            </div>
+                        </a>
+                        <a href="" class="card-link a-decor-off d-none  d-md-block img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar-Showbiz_current-kimchiu2.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <p class="fw-bold fs-md-5 cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-black">dd/mm/yy</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row d-none d-md-block">
+                    <div class="col-12 d-flex gap-3 flex-wrap flex-lg-nowrap">
+                        <a href="article/Showbiz-current.html" class="card-link a-decor-off img-link section-gallery">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h5 class="fw-bold fs-md-5 d-none d-md-block cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </h5>
+                                <p class="fw-bold fs-md-5 d-block d-md-none cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-black">dd/mm/yy</p>
+                            </div>
+                        </a>
+                        <a href="" class="card-link a-decor-off img-link section-gallery">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h5 class="fw-bold fs-md-5 d-none d-md-block cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </h5>
+                                <p class="fw-bold fs-md-5 d-block d-md-none cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-black">dd/mm/yy</p>
+                            </div>
+                        </a>
+                        <a href="" class="card-link a-decor-off img-link section-gallery">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h5 class="fw-bold fs-md-5 d-none d-md-block cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </h5>
+                                <p class="fw-bold fs-md-5 d-block d-md-none cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-black">dd/mm/yy</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-12 text-center">
+                        <a href="showbiz_news.html" type="button" class="btn cust-btn-2 fw-bold">Go to Showbiz Komms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 col-xl-3"></div>
+        </div>
+
+        <div class="my-5 py-5"></div>
+        <div class="row my-5 py-5 cust-bg-color-dark-blood">
+            <div class="col-1 col-xl-3"></div>
+            <div class="col-10 col-xl-6">
+                <div class="row">
+                    <div class="text-center py-5 cust-color-white">
+                        <h1 class="fw-bold fs-1">SportFits</h1>
+                    </div>
+                    <div class="col-12 col-md-9">
+                        <a href="article/Sport-olympics.html" class="card-link a-decor-off img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar-sports-olympic.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h3 class="fw-bold fs-md-5 d-none d-md-block cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </h3>
+                                <p class="fw-bold fs-md-5 d-block d-md-none cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-clay">dd/mm/yy</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <a href="article/Sport-NBA.html" class="card-link a-decor-off img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar-sport-basketball.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <p class="fw-bold fs-md-5 cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-clay">dd/mm/yy</p>
+                            </div>
+                        </a>
+                        <a href="" class="card-link a-decor-off d-none  d-md-block img-link">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar-sport-volleyball.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <p class="fw-bold fs-md-5 cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-clay">dd/mm/yy</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row d-none d-md-block">
+                    <div class="col-12 d-flex gap-3 flex-wrap flex-lg-nowrap">
+                        <a href="article/Sport-Volleyball.html" class="card-link a-decor-off img-link section-gallery">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h5 class="fw-bold fs-md-5 d-none d-md-block cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </h5>
+                                <p class="fw-bold fs-md-5 d-block d-md-none cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-clay">dd/mm/yy</p>
+                            </div>
+                        </a>
+                        <a href="" class="card-link a-decor-off img-link section-gallery">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h5 class="fw-bold fs-md-5 d-none d-md-block cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </h5>
+                                <p class="fw-bold fs-md-5 d-block d-md-none cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-clay">dd/mm/yy</p>
+                            </div>
+                        </a>
+                        <a href="" class="card-link a-decor-off img-link section-gallery">
+                            <div class="d-flex flex-column card-layout-simple of-hide">
+                                <img src="src/16-9-ar.jpg" alt="">
+                            </div>
+                            <div class="py-2 mb-3">
+                                <h5 class="fw-bold fs-md-5 d-none d-md-block cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </h5>
+                                <p class="fw-bold fs-md-5 d-block d-md-none cust-color-white">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, ipsum.
+                                </p>
+                                <p class="cust-color-clay">dd/mm/yy</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row py-5">
+                    <div class="col-12 text-center">
+                        <a href="sportfits_news.html" type="button" class="btn cust-btn-2 fw-bold">Go to SportFits Komms</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1 col-xl-3"></div>
+        </div>
+
+        <div class="my-5 py-5"></div>
+
+        <div class="row main-footer-container p-5 cust-bg-color-light-mud-green">
+            <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-2 col-xxl-3"></div>
+            <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-8 col-xxl-6">
+                <div class="footer-aboutus-title-container d-md-flex">
+                    <div class="d-flex align-items-center">
+                        <div>
+                            <div class="nav-icon-container d-flex align-items-center ">
+                                <img src="src/missedkomms-logo.jpg" alt="" width="60px">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fw-bold cust-fs-60 cust-color-white align-items-center ms-md-3">
+                        About us!
+                    </div>
+                </div>
+                <div class="footer-aboutus-text-logo-container mt-3 d-flex gap-5">
+                    <div class="footer-aboutus-text-container w-75">
+                        <p class="text-justify cust-color-white">
+                            We are dedicated to delivering the latest news from the Philippines. Committed to providing
+                            our audience with accurate and relevant information, we foster a deeper understanding of the
+                            country's events and issues. Join us to stay informed and engaged with the current affairs
+                            shaping the Philippines.
+                        </p>
+                    </div>
+                    <div
+                        class="footer-aboutus-logo-container w-25 d-flex flex-wrap justify-content-center align-items-center gap-3">
+                        <a href="#">
+                            <img src="src/facebook-svgrepo-com.svg" alt="" width="40px">
+                        </a>
+                        <a href="#">
+                            <img src="src/instagram-svgrepo-com.svg" alt="" width="40px">
+                        </a>
+                        <a href="#">
+                            <img src="src/twitter-svgrepo-com.svg" alt="" width="40px">
+                        </a>
+                    </div>
+                </div>
+                <div class="my-4 div-border-segment"></div>
+                <div class="footer-sponsor-title-container">
+                    <div class="text-center fw-bold cust-fs-50 cust-color-white">
+                        In partnership with
+                    </div>
+                </div>
+                <div
+                    class="footer-sponsor-logo-container my-5 d-flex flex-wrap justify-content-center justify-content-lg-between align-items-center text-center gap-5">
+                    <a href="https://www.inquirer.net" target="_blank">
+                        <img src="src/PDI-logo.svg" alt="" width="175px">
+                    </a>
+                    <a href="https://www.abs-cbn.com" target="_blank" class="cust-bg-color-white">
+                        <img src="src/ABS-CBN_News_Logo_2014.svg" alt="" width="175px">
+                    </a>
+                    <a href="https://www.gmanetwork.com" target="_blank">
+                        <img src="src/GMA_Network_Logo_Vector.svg" alt="" width="175px">
+                    </a>
+                </div>
+                <div class="footer-copyright-container text-center mt-5 pt-5">
+                    <p class="cust-color-white">
+                        All Rights Reserved @ MissedKomms®
+                    </p>
+                </div>
+            </div>
+            <div class="col-0 col-sm-0 col-md-1 col-lg-1 col-xl-2 col-xxl-3"></div>
+        </div>
+        <div class="row cust-bg-color-mud-green">
+            <div class="col-12 py-2 cust-color-mud-green">Don't Remove This</div>
+        </div>
+        <script src="script/modal.js"></script>
+        <script src="script/button_toggle.js"></script>
+    </div>
+</body>
+
+</html>
